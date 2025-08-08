@@ -1,0 +1,10 @@
+name: "Say Hello"
+description: "A simple GitHub Action that says hello"
+inputs:
+  name:
+    description: "Name to greet"
+    required: true
+    default: "World"
+runs:
+  using: "node16"
+  main: "index.js"
