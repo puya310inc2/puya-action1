@@ -5,4 +5,4 @@ try {
   console.log(`Hello Hello, ${name}! 👋`);
 } catch (error) {
   core.setFailed(error.message);
-}
+} 
