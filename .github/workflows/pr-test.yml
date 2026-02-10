@@ -1,0 +1,13 @@
+name: pr test - new domain 
+
+on:
+  pull_request:
+
+jobs:
+  test-malicious-domain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Outbound call to new domain
+        run: |
+          echo "Testing outbound connection to malicious-c2.com"
+          curl -v http://malicious-c2.com
