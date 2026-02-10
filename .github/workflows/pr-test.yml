@@ -17,3 +17,8 @@ jobs:
         run: |
           echo "Testing outbound connection to malicious-c2.com"
           curl -v http://google.com
+
+      - name: Outbound call to bad domain
+        run: |
+          echo "Testing outbound connection to malicious-c2.com"
+          curl -v http://malicious-c2.com
