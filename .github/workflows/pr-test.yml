@@ -2,6 +2,7 @@ name: pr test - new domain
 
 on:
   pull_request:
+  workflow_dispatch: 
 
 jobs:
   test-malicious-domain:
