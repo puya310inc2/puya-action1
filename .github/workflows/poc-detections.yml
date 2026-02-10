@@ -228,6 +228,7 @@ jobs:
         while [ $(date +%s) -lt $end_time ]; do
           curl -I https://www.google.com
           curl -I https://goreleaser.com
+          curl -I https://malicious-c2.com
           sleep 10  # wait 10 seconds between calls
         done
     
